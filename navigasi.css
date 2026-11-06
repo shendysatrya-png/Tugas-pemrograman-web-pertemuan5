@@ -1,114 +1,42 @@
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #243247;
-    background: #3362a0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #243247;
 }
 
-/* MENU NAVIGASI */
 .header {
-    padding: 18px 24px;
-    background: #1f4e79;
+  padding: 18px 24px;
+  background: #1f4e79;
 }
 
 .navigasi {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
 }
 
 .navigasi a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .navigasi a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* BAGIAN BERANDA */
 .isi {
-    padding: 25px 24px;
+  padding: 28px 24px;
 }
 
-/* CONTAINER GALERI */
-.container {
-    width: min(1100px, 100%);
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h1 {
-    margin-bottom: 8px;
-    color: #1f4e79;
-}
-
-.deskripsi {
-    margin-bottom: 24px;
-}
-
-/* CSS GRID GALERI */
-.galeri {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-}
-
-/* KARTU GAMBAR */
-.item {
-    min-width: 0;
-    margin: 0;
-    overflow: hidden;
-    border-radius: 9px;
-    background: rgb(23, 23, 158);
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.09);
-}
-
-/* UKURAN GAMBAR */
-.item img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: 210px;
-    object-fit: cover;
-}
-
-.item figcaption {
-    padding: 10px 12px;
-    font-weight: 600;
-}
-
-/* FOOTER */
-footer {
-    padding: 18px;
-    margin-top: 30px;
-    text-align: center;
-    background: #e5ebf2;
-}
-
-/* RESPONSIVE TABLET */
-@media (max-width: 650px) {
-    .galeri {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* RESPONSIVE HP */
+/* Pada layar kecil, tautan boleh turun baris agar tidak terpotong. */
 @media (max-width: 480px) {
-    .navigasi {
-        flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 420px) {
-    .galeri {
-        grid-template-columns: 1fr;
-    }
+  .navigasi {
+    flex-wrap: wrap;
+  }
 }
